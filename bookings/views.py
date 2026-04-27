@@ -90,11 +90,9 @@ class UserBookingsView(generics.ListAPIView):
     permission_classes = [IsAuthenticated]
 
 
-    def get(self,request,user_id):
-
-        if request.user_id != user_id:
+    def get(self, request, user_id):
+        if request.user.id != int(user_id):
             return Response({'error': 'Unauthorized'}, status=status.HTTP_401_UNAUTHORIZED)
-        
 
         bookings = Booking.objects.filter(user_id=user_id)
         serializer = BookingSerializer(bookings, many=True)
