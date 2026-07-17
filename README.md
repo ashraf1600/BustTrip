@@ -5,6 +5,8 @@ A Django REST API backend for booking bus seats. This project supports user regi
 ![Project Screenshot](./assets/TE.png)
 
 
+
+
 ## Features
 
 - User registration and login
