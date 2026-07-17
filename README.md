@@ -4,6 +4,10 @@ A Django REST API backend for booking bus seats. This project supports user regi
 
 ![Project Screenshot](./assets/TE.png)
 
+![Project Screenshot](./assets/TE1.png)
+
+
+![Project Screenshot](./assets/TE2.png)
 
 
 
